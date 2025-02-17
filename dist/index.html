@@ -5,8 +5,9 @@
   <style type="text/css">
     button {background-color:transparent; border:none; cursor:pointer}
     #player{
-      width: 800px; height: 600px; box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+      width: 800px; height: 600px; box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
       display: flex; flex-direction: column}
+    .left-buttons{display: flex; flex-direction: row}
     .bottom-controls{background-color:black;}
     button > i {color:white; margin:5px auto}
   </style>
@@ -15,7 +16,7 @@
 </head>
 <body>
   <div id="player">
-    <div class="js-video-container" style="flex-grow: 5;"></div>
+    <div class="js-video-container" style="flex-grow:5"></div>
     <div class="bottom-controls">
       <div class="left-buttons">
         <div class="js-play-button">
@@ -26,6 +27,16 @@
         <div class="js-pause-button">
           <button>
             <i class="fa fa-pause" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="js-mute-button">
+          <button>
+            <i class="fa fa-volume-up" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="js-volume-button">
+          <button>
+            <i class="fa fa-volume-off" aria-hidden="true"></i>
           </button>
         </div>
       </div>

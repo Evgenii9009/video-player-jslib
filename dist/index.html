@@ -4,25 +4,29 @@
   <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
   <style type="text/css">
     button {background-color:transparent; border:none; cursor:pointer}
+    #player{width: 800px; height: 600px;}
+    .bottom-controls{background-color:black;}
+    button > i {color:white; margin:5px auto}
   </style>
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
 </head>
 <body>
-  <div id="player" style="width: 800px; height: 600px;">
+  <div id="player">
     <div class="js-video-container" style="width: 100%; height: 100%"></div>
-    <div style="background-color:black;">
-      <div class="js-play-button">
-        <button>
-          <i class="fa fa-play" style="color:white; margin:5px auto" aria-hidden="true"></i>
-        </button>
+    <div class="bottom-controls">
+      <div class="left-buttons">
+        <div class="js-play-button">
+          <button>
+            <i class="fa fa-play" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="js-pause-button">
+          <button>
+            <i class="fa fa-pause" aria-hidden="true"></i>
+          </button>
+        </div>
       </div>
-      <div class="js-pause-button">
-        <button>
-          <i class="fa fa-pause" style="color:white; margin:5px auto" aria-hidden="true"></i>
-        </button>
-      </div>
-    </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

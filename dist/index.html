@@ -6,12 +6,15 @@
     button {background-color:transparent; border:none; cursor:pointer}
     #player{
       width: 800px; height: 600px; box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
-      display: flex; flex-direction: column}
+      display: flex; flex-direction: column
+    }
     .left-buttons{display: flex; flex-direction: row}
-    .bottom-controls{background-color:black;}
+    .bottom-controls{background-color:black; display: flex; flex-direction: row}
+    .panel-distance {flex-grow: 100}
     button > i {
       color:white; margin:15px auto; font-size: xx-large;
-      width: 15px; height: 15px;}
+      width: 15px; height: 15px;
+    }
   </style>
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
@@ -41,6 +44,13 @@
             <i class="fa fa-volume-off" aria-hidden="true"></i>
           </button>
         </div>
+      </div>
+      <div class="panel-distance">
+      </div>
+      <div class="js-fullscreen-button">
+        <button>
+          <i class="fa fa-expand" aria-hidden="true"></i>
+        </button>
       </div>
     </div>
   </div>

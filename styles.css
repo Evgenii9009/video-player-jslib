@@ -1,13 +1,11 @@
-.player-button {background-color:transparent; border:none; cursor:pointer}
+.player-button {
+  background-color:transparent; border:none; cursor:pointer; color:white;
+  margin:15px 10px; font-size: x-large; width: 35px; height: 35px;}
 #player{
   width: 800px; height: 600px; box-shadow: 5px 5px 10px 10px rgba(0,0,0,0.5);
   display: flex; flex-direction: column
 }
 .left-buttons{display: flex; flex-direction: row}
 .bottom-controls{background-color:black; display: flex; flex-direction: row}
-.panel-distance{flex-grow: 100}
-button > i {
-  color:white; margin:15px auto; font-size: xx-large;
-  width: 15px; height: 15px;
-}
-.js-video-container{flex-grow: 5;}
+.panel-distance{flex-grow: 1}
+.js-video-container{flex-grow: 5}

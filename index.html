@@ -3,6 +3,7 @@
 <head>
   <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
   <title>Пример подключения плеера</title>
   <meta charset="utf-8">
 </head>
@@ -10,7 +11,6 @@
   <div id="player">
     <div class="js-video-container"></div>
     <div class="bottom-controls">
-      <div class="left-buttons">
         <div class="js-play-button">
           <button class="player-button">
             <i class="fa fa-play" aria-hidden="true"></i>
@@ -31,8 +31,14 @@
             <i class="fa fa-volume-off" aria-hidden="true"></i>
           </button>
         </div>
-      </div>
-      <div class="panel-distance">
+      <div class="viewing-panel">
+        <div class="video-timer">
+          <span class="js-current-time"></span>
+        </div>
+        <div class="panel-distance"></div>
+          <div class="video-timer">
+            <span class="js-duration"></span>
+          </div>
       </div>
       <div class="js-fullscreen-button">
         <button class="player-button">

@@ -1,17 +1,94 @@
-.player-button {
-  background-color:transparent; border:none; cursor:pointer; color:white; height: 25px; width:25px;
-  font-size: 20px; margin-top: 11px; margin-bottom: 0px; margin-left: 4px; margin-right: 7px}
-#player{
-  width: 800px; height: 600px; box-shadow: 0px 1px 0px 7px rgba(0,0,0,0.4);
-  display: flex; flex-direction: column
+:focus {
+  outline: 0;
 }
-.bottom-controls{background-color:black; display: flex; flex-direction: row; height:45px}
-.js-progress{flex-grow: 0.999; background-color: black; height: 25px; margin-top: 20px; margin-left: 10px; margin-right: 10px; border-radius: 100px;
-  display: flex; flex-direction: row;}
-.js-progress-slider{background-color: red; height: 5px; border-radius: 100px;}
-.js-video-container{flex-grow: 1}
-.video-timer{color: white; font-family: "Roboto"; font-weight: 400; margin: 14px 0px 0px 2px}
-.viewing-panel{display: flex; flex-direction: row; flex-grow:1; margin-left: 5x}
-.slider{border-radius: 50%; height: 8px; width: 8px; background-color: red; box-shadow: 0px 0px 0px 3px white;display: inline-block;
-  margin-left: -5px; margin-top: -1px; opacity: 0; transition-duration: 300ms}
-.js-progress:hover .slider{opacity: 1; transition-duration: 300ms}
+
+
+.player-button {
+  background-color:transparent; 
+  border:none; cursor:pointer; 
+  color:white; height: 25px; 
+  width:25px;
+  font-size: 20px; 
+  margin-top: 11px; 
+  margin-bottom: 0px; 
+  margin-left: 4px; 
+  margin-right: 7px
+}
+
+
+#player{
+  width: 800px; 
+  height: 600px; 
+  box-shadow: 0px 1px 0px 7px rgba(0,0,0,0.4);
+  display: flex; 
+  flex-direction: column
+}
+
+
+.bottom-controls{
+  background-color:black; 
+  display: flex; 
+  flex-direction: row; 
+  height:45px
+}
+
+
+.js-progress{
+  flex-grow: 0.999; 
+  background-color: black; 
+  height: 25px; 
+  margin-top: 20px; 
+  margin-left: 10px; 
+  margin-right: 10px; 
+  border-radius: 100px;
+  display: flex; 
+  flex-direction: row;
+}
+
+
+.js-progress-slider{
+  background-color: red; 
+  height: 5px; 
+  border-radius: 100px;
+}
+
+
+.js-video-container{
+  flex-grow: 1
+}
+
+
+.video-timer{
+  color: white; 
+  font-family: "Roboto"; 
+  font-weight: 400; 
+  margin: 14px 0px 0px 2px
+}
+
+
+.viewing-panel{
+  display: flex; 
+  flex-direction: row; 
+  flex-grow:1; 
+  margin-left: 5x
+}
+
+
+.slider{
+  border-radius: 50%; 
+  height: 8px; 
+  width: 8px; 
+  background-color: red; 
+  box-shadow: 0px 0px 0px 3px white;
+  display: inline-block;
+  margin-left: -5px; 
+  margin-top: -1px; 
+  opacity: 0; 
+  transition-duration: 300ms
+}
+
+
+.js-progress:hover .slider{
+  opacity: 1; 
+  transition-duration: 300ms
+}
